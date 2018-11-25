@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,
+html * {
+	box-sizing: border-box;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 200;
+}
+
+/* https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
+.topnavbar {
+  background-color: #2D2D35;
+  z-index: 1;
+  overflow: hidden;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-shadow:0px 1px 1px rgb(37, 37, 37);
+  z-index: 2;
+}
+
+/*side nav*/
+
+span {
+	color: white;
+	background-color: #2D2D35;
+	float: right;
+	padding: 5px 20px;
+	margin: 5px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.name{
+	float: left;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #2D2D35;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.aWineTag {
+	margin: 10px 10px;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.btntan {
+	background-color: #B9A88E;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    cursor: pointer;
+	border-radius: 25px;
+	border: 2px #FFFFFF solid;
+}
+
+.btntan:hover {
+box-shadow: 0px 0px 25px white;
+}
+
+.btndark {
+    background-color: #2D2D35;
+    color: white;
+    padding: 6px;
+    font-size: 16px;
+    cursor: pointer;
+	border-radius: 25px;
+	border-color:white;
+	border: 2px #FFFFFF solid;
+}
+
+.btndark:hover {
+box-shadow: 0px 0px 25px white;
+}
+
+body {
+max-width: auto;
+margin: 0px auto;
+}
+
+img {
+	width:100%;
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+h1 {
+	text-align: center;
+	padding: 0px 0px 0 5px;
+	margin: 60px 0 0 0;
+	color: white;
+	font-size: 30px;
+	letter-spacing: 6px;
+	font-weight: 200;
+}
+
+.projects {
+	text-align: center;
+	margin: 0 0 30px;
+	padding: 5px 5px;
+	text-transform: uppercase;
+	font-size: 24px;
+	color: black;
+	letter-spacing: 2px;
+	font-weight: 500;
+}
+
+
+
+.button {
+	border: 2px #FFFFFF solid;
+	padding: 8px 30px;
+	border-radius: 30px;
+	color:#FFFFFF;
+	text-decoration: none;
+	margin-top:80px;
+}
+
+.picture {
+	/* background-image: url("https://imgur.com/7t4CUSt.jpeg"); */
+	background-image: url(images/IMG_7895.PNG);
+	background-size: cover;
+	height:800px;
+}
+
+img.logos {
+	height:60px;
+	width: auto;
+	margin: 0px 10px 30px;
+}
+
+.logosGithub {
+	height:30px;
+	width: auto;
+}
+
+.logosLinkedIn {
+	height:34px;
+	width: auto;
+}
+
+.containerLogoLinks {
+	text-align: center;
+}
+
+.divLogosGitLinkedIn {
+	margin: 30px 0 0 0;
+}
+
+.textListOfSkills {
+font-size: 18px;
+}
+
+.skills {
+	text-align: center;
+	margin: 0 70px 25px 70px
+}
+
+.containerlogo {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: center;
+}
+
+.description {
+	padding: 180px 0;
+/*	align-content: center;*/
+	text-align: center;
+}
+
+/*column floated*/
+.column {
+	float: left;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 10px 0 10px 0;
+}
+
+p.tanbox {
+	margin: 0px 0 40px 0;
+	font-size: 18px;
+}
+
+p.darkbox {
+	margin: 40px 0 40px 0;
+	font-size: 18px;
+}
+
+p.info {
+	font-size: 16px;
+	text-transform: none;
+	margin: 20px 0;
+
+}
+
+p.click {
+	font-size: 16px;
+	text-transform: none;
+	font-weight: 500;
+	color:black;
+}
+
+h2 {
+	text-align: center;
+	margin: 0 0 0px;
+	padding: 5px 5px;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: white;
+	letter-spacing: 3px;
+	font-weight: 500;
+}
+
+h2.about {
+	font-size: 24px;
+	color: #ffffff;
+	padding: 45px 0;
+}
+
+h2.resume1 {
+	font-size: 24px;
+	color: #ffffff;
+	padding: 45px 0;
+}
+
+h2.projects {
+	padding: 70px 0 0px;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: 500;
+	color:black;
+}
+
+
+
+.col {
+	float:left;
+	padding: 0 0;
+}
+
+/*.col-md-one-half {
+width: 50%;
+}*/
+main {
+	background-color: #E4E4E4;
+}
+
+.resume {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 40px 0;
+
+}
+
+.info-tan-box {
+	background-color: #b9a88e;
+	color:#ffffff;
+	padding: 30px 20px 30px;
+	text-align: center;
+	height: 400px;
+	width:50%;
+}
+
+.info-dark-box {
+	background-color: #2D2D35;
+	color:#ffffff;
+	padding: 30px 20px 30px;
+	text-align: center;
+	height: 400px;
+	width:50%;
+
+}
+
+.rowBoxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+
+/*.row:before, .row:after {
+	content: "";
+	display: table;
+}
+.row:after {
+	clear:both;
+}*/
+/*
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+  padding: 0 0 10px 0;
+}*/
+
+footer {
+	text-transform: uppercase;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color:white;
+    font-size:10px;
+    letter-spacing: .08em;
+    font-weight:500;
+	margin: 0 0 0px 0;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 0 0;
+}
+
+
+/* Content */
+.content {
+    background-color: #E4E4E4;
+    padding: 10px;
+	margin:10px 10px;
+	min-height: 300px;
+	width: 43%;
+	/* max-width: 390px; */
+}
+
+.content:hover {
+box-shadow: 0px 0px 20px #888888;
+}
+
+.container {
+margin-right: auto;
+margin-left: auto;
+padding: 15px 15px 35px 15px;
+background-color: #E4E4E4;
+width: auto;
+/* height:600px; */
+}
+
+section.work {
+	background-color: #E4E4E4;
+}
+
+.made {
+	color:#2592D8;
+	width:100%;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.author {
+	width:100%;
+	color:#2592D8;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+footer {
+	text-transform: uppercase;
+    background-color: #2D2D35;
+    color:white;
+    font-size:10px;
+    letter-spacing: .08em;
+    font-weight:500;
+	text-align: center;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/*tablet view*/
+
+@media (max-height: 450px) {
+  .sidenav {
+	  padding-top: 15px;
+	}
+  .sidenav a {
+	  font-size: 18px;
+	}
+}
+
+@media (max-width: 650px) {
+
+.container {
+margin-right: auto;
+margin-left: auto;
+padding-right: 15px;
+padding-left: 15px;
+background-color: #E4E4E4;
+width: auto;
+}
+
+
+h1 {
+	text-align: center;
+	margin: 160px 0 0 0;
+	padding: 0px 5px 0 10px;
+}
+
+.description {
+	padding: 80px 0 100px 0;
+}
+
+.content{
+	align-content: center;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-transform: uppercase;
+	display:block;
+	width: 100%;
+}
+
+.rowBoxes {
+	display: block;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.info-tan-box {
+	background-color: #b9a88e;
+	color:#ffffff;
+	padding: 30px 15% 50px;
+	text-align: center;
+	height: 450px;
+	width:100%;
+}
+
+.info-dark-box {
+	background-color: #2D2D35;
+	color:#ffffff;
+	padding: 30px 15% 30px;
+	text-align: center;
+	height: 400px;
+	width:100%;
+
+}
+
+}
